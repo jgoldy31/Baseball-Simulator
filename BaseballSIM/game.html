@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+  </head>
+  <body onload="displaySelectedLineup()">
+    <div class="top-1" id="paster">
+      <select class="form" name="" id="bo1">
+        <option value="01">Select First Batter</option>
+      </select>
+
+      <button id="homeOrder" class="btn btn-primary" onclick="moveToNextLine()">
+        Confirm player and move to next
+      </button>
+
+      <select class="form-2" name="" id="bo2">
+        <option value="01">Select First Batter</option>
+      </select>
+
+      <button
+        id="awayOrder"
+        class="btn btn-danger"
+        onclick="moveToNextLineAway()"
+      >
+        Confirm player and move to next
+      </button>
+    </div>
+    <div class="flex-container">
+      <br />
+      <div class="flex-child">
+        <h1>Home Team</h1>
+        <h3 id="result"></h3>
+        <div id="p1">
+          <img
+            src=""
+            alt=""
+            id="pitcher"
+            height="150"
+            onclick="addToOrder(this)"
+          />
+          <h4>Pitcher</h4>
+        </div>
+        <div id="c1">
+          <img src="" alt="" id="catcher" height="150" />
+          <h4>Catcher</h4>
+        </div>
+        <div id="1b1">
+          <img src="" alt="" id="first" height="150" />
+          <h4>First Base</h4>
+        </div>
+        <div id="2b1">
+          <img src="" alt="" id="second" height="150" />
+          <h4>Second Base</h4>
+        </div>
+        <div id="ss1">
+          <img src="" alt="" id="short" height="150" />
+          <h4>Shortstop</h4>
+        </div>
+        <div id="3b1">
+          <img src="" alt="" id="third" height="150" />
+          <h4>Third Base</h4>
+        </div>
+        <div id="lf1">
+          <img src="" alt="" id="left" height="150" />
+          <h4>Left Field</h4>
+        </div>
+        <div id="cf1">
+          <img src="" alt="" id="center" height="150" />
+          <h4>Center Field</h4>
+        </div>
+        <div id="rf1">
+          <img src="" alt="" id="right" height="150" />
+          <h4>Right Field</h4>
+        </div>
+        <div id="dh1">
+          <img src="" alt="" id="designatedHitter" height="150" />
+          <h4>Designated Hitter</h4>
+        </div>
+      </div>
+      <div class="flex-child">
+        <h1>Away Team</h1>
+        <div id="p2">
+          <img src="" alt="" id="pitcher2" height="150" />
+          <h4>Pitcher</h4>
+        </div>
+        <div id="c2">
+          <img src="" alt="" id="catcher2" height="150" />
+          <h4>Catcher</h4>
+        </div>
+        <div id="1b2">
+          <img src="" alt="" id="first2" height="150" />
+          <h4>First Base</h4>
+        </div>
+        <div id="2b2">
+          <img src="" alt="" id="second2" height="150" />
+          <h4>Second Base</h4>
+        </div>
+        <div id="ss2">
+          <img src="" alt="" id="short2" height="150" />
+          <h4>Shortstop</h4>
+        </div>
+        <div id="3b2">
+          <img src="" alt="" id="third2" height="150" />
+          <h4>Third Base</h4>
+        </div>
+        <div id="lf2">
+          <img src="" alt="" id="left2" height="150" />
+          <h4>Left Field</h4>
+        </div>
+        <div id="cf2">
+          <img src="" alt="" id="center2" height="150" />
+          <h4>Center Field</h4>
+        </div>
+        <div id="rf2">
+          <img src="" alt="" id="right2" height="150" />
+          <h4>Right Field</h4>
+        </div>
+        <div id="dh2">
+          <img src="" alt="" id="designatedHitter2" height="150" />
+          <h4>Designated Hitter</h4>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

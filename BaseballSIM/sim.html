@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style2.css" />
+    <script src="simScript.js"></script>
+  </head>
+  <body onload="populate()">
+    <div class="bground">
+      <div class="container-6" id="lineupsDispHome">
+        <h1>Home Batting Order</h1>
+        <img src="" alt="" id="0" height="85" />
+        <img src="" alt="" id="1" height="85" />
+        <img src="" alt="" id="2" height="85" />
+        <img src="" alt="" id="3" height="85" />
+        <img src="" alt="" id="4" height="85" />
+        <img src="" alt="" id="5" height="85" />
+        <img src="" alt="" id="6" height="85" />
+        <img src="" alt="" id="7" height="85" />
+        <img src="" alt="" id="8" height="85" />
+        <br />
+        <br />
+        <h4>Home Pitcher</h4>
+        <img src="" alt="" id="homePitcher" height="100" />
+        <br />
+        <br />
+        <br />
+        <h2>Pitching</h2>
+        <img src="" alt="" id="pitching" height="187" />
+      </div>
+
+      <div class="container-6" id="lineupsDispAway">
+        <h1>Away Batting Order</h1>
+        <img src="" alt="" id="10" height="85" />
+        <img src="" alt="" id="11" height="85" />
+        <img src="" alt="" id="12" height="85" />
+        <img src="" alt="" id="13" height="85" />
+        <img src="" alt="" id="14" height="85" />
+        <img src="" alt="" id="15" height="85" />
+        <img src="" alt="" id="16" height="85" />
+        <img src="" alt="" id="17" height="85" />
+        <img src="" alt="" id="18" height="85" />
+        <br />
+        <br />
+        <h4>Away Pitcher</h4>
+        <img src="" alt="" id="awayPitcher" height="100" />
+        <br />
+        <br />
+        <br />
+        <h2>Batting</h2>
+        <img src="" alt="" id="batting" height="187" />
+      </div>
+    </div>
+    <div class="info">
+      <span class="spanWordsOne">Inning:</span>
+      <span class="spanWords" id="inning">Top 1st</span>
+      <span class="spanWordsOne">Outs:</span>
+      <span class="spanWords" id="outs">0</span>
+      <span class="spanWordsOne">Home Score:</span>
+      <span class="spanWords" id="homeScore">0</span>
+      <span class="spanWordsOne">Away Score:</span>
+      <span class="spanWords" id="awayScore">0</span>
+    </div>
+    <div id="outcoming" class="data1"></div>
+  </body>
+</html>
